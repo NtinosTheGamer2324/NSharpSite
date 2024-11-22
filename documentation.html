@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSharp Documentation</title>
+    <link rel="icon" href="./icon.png" type="image/png">
+    <style>
+        /* General reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #1E1E1E;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #0094FF; /* Blue color */
+        }
+
+        header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%; /* Optional: Make icon circular */
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #0094FF; /* Blue color */
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #0094FF; /* Blue color */
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #444;
+        }
+
+        code {
+            background-color: #1E1E1E;
+            color: #0094FF; /* Blue color */
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1E1E1E;
+            border-top: 2px solid #0094FF; /* Blue color */
+            color: #CCCCCC;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./icon.png" alt="NSharp Logo">
+        <h1>NSharp Documentation</h1>
+    </header>
+    <main>
+        <section id="run-script">
+            <h2>How to Run a Script</h2>
+            <ol>
+                <li>First, open the NSharp (N#) Interpreter.</li>
+                <img src="./NSharp/ScreenShotsForTheHTML/1.png" alt="Opening the NSharp Interpreter">
+                <li>Select your script file.</li>
+                <img src="./NSharp/ScreenShotsForTheHTML/2.png" alt="Selecting the Script">
+                <li>Run the script.</li>
+                <img src="./NSharp/ScreenShotsForTheHTML/3.png" alt="Running the Script">
+                <li>A console will appear to show the output.</li>
+                <img src="./NSharp/ScreenShotsForTheHTML/CONSOLE.png" alt="Console Output">
+            </ol>
+        </section>
+        
+        <section id="script-in-nsharp">
+            <h2>How to Script in NSharp</h2>
+            <p>To create a script, you need to follow these steps:</p>
+            <ol>
+                <li>Create a new file using your favorite text editor.</li>
+                <img src="./NSharp/ScreenShotsForTheHTML/4.png" alt="Creating a File">
+                <li>Save the file with the <code>.nsp</code> extension.</li>
+                <img src="./NSharp/ScreenShotsForTheHTML/5.png" alt="Adding .nsp Extension">
+            </ol>
+        </section>
+
+        <section id="features">
+            <h2>Available Features</h2>
+            <ul>
+                <li>
+                    <strong>Write()</strong>: Used to write output to the console.
+                    <p>Example:</p>
+                    <code>Write("Hello, World!")</code>
+                    <img src="./NSharp/ScreenShotsForTheHTML/6.png" alt="Write Function Example">
+                </li>
+                <li>
+                    <strong>Variables:</strong> Variables in NSharp are declared using the <code>var</code> keyword. 
+                    <p>Syntax:</p>
+                    <code>var variableName = value</code>
+                    <p>Examples:</p>
+                    <ul>
+                        <li><code>var age = 25</code> (Numeric Variable)</li>
+                        <li><code>var name = "John"</code> (String Variable)</li>
+                    </ul>
+                    <p>Variables can be used in expressions:</p>
+                    <code>Write("Hello, " .. name)</code>
+                </li>
+                <li>
+                    <strong>Functions:</strong> Functions are defined using the <code>function</code> keyword.
+                    <p>Syntax:</p>
+                    <code>
+function functionName()<br>
+&nbsp;&nbsp;&nbsp;-- Your code here<br>
+end
+                    </code>
+                    <p>Example:</p>
+                    <code>
+function greet()<br>
+&nbsp;&nbsp;&nbsp;Write("Welcome to NSharp!")<br>
+end
+                    </code>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 NtinosTheGamer1. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

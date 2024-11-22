@@ -1,0 +1,97 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark Theme */
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: #00b4d8;
+    margin-top: 0.5rem;
+  }
+  
+  .header-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; /* Optional: Make the icon circular */
+  }
+  
+  nav button {
+    background-color: #00b4d8;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  nav button:hover {
+    background-color: #0077b6;
+  }
+  
+  main {
+    padding: 2rem;
+    text-align: center;
+    flex: 1; /* Ensures footer stays at the bottom */
+  }
+  
+  #download {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  #download h2 {
+    color: #00b4d8;
+    margin-bottom: 1rem;
+  }
+  
+  #download p {
+    margin-bottom: 1rem;
+  }
+  
+  .download-btn {
+    background-color: #00b4d8;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #0077b6;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 1rem;
+    color: #aaaaaa;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
